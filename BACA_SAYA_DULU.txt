@@ -15,6 +15,8 @@ Cara Run
 For mo tes 2 user, buka 2 window di browser, baru abis itu kase bakusebelah 
 kedua window sama" buka url : "http://localhost:4000"
 
-**kotak "Your Name" terserah isi apa, isi "beb" leh boleh wkwkwkw :)
+** DISCLAIMER **
+Dpe git bash jangan tutup selama aplikasi chatting masih pake
+kotak "Your Name" terserah isi apa, isi "beb" leh boleh wkwkwkw :)
 
 SEMANGAT :)
