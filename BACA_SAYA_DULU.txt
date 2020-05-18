@@ -1,0 +1,18 @@
+Cara setting dan setup aplikasi
+- Download dari github
+- Extract
+- Buka folder aplikasi 
+- Klik kanan dan pilih git bash here
+- ketik "npm install"
+- tunggu hingga semua proses selesai
+
+Cara Run
+- Masih di dalam git bash
+- ketik "node index.js"
+- setelah server menyala, buka browser dan masukan url : "http://localhost:4000"
+- aplikasi siap dipakai
+
+For mo tes 2 user, buka 2 window di browser, baru abis itu kase bakusebelah 
+kedua window sama" buka url : "http://localhost:4000"
+
+SEMANGAT :)

@@ -8,14 +8,36 @@ var message = document.getElementById('message');
 	output  = document.getElementById('message-box');
 
 send.addEventListener('click', function(){
-	socket.emit("chat", {
-		message: message.value,
-		handle: handle.value
-	})
+
+	var user    = handle.value;
+	var pesan   = message.value;
+
+	if(user == ""){
+		alert("Nama pengguna harus diisi");
+	}
+
+	else if(pesan == ""){
+		alert("Pesan harus diisi");
+	}
+
+	else if(user != "" && pesan != ""){
+
+		socket.emit("chat", {
+			message: message.value,
+			handle: handle.value
+		})
+
+	}
+	
 	message.value = "";
 });
 
 
 socket.on('chat', function(data){
-	output.innerHTML += '<p>' + data.message + "</p>"
+
+	var constructor = "<div class='chat-bubble'><p class='title'>" + data.handle + "</p><p>" + data.message + "</p></div>";
+	output.innerHTML += constructor
+	
+	var objDiv = document.getElementById("message-box");
+	objDiv.scrollTop = objDiv.scrollHeight;
 });
